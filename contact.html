@@ -1,112 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {
-    font-family: "Lato", sans-serif;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.container {
+  padding: 0 16px;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+.title {
+  color: grey;
+  font-size: 18px;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+button:hover, a:hover {
+  opacity: 0.7;
 }
 </style>
 </head>
 <body style="background-color:powderblue;">
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<a href="https://rapolusakura.github.io/portfolios/aboutme.html" target = "_blank">Home</a> 
-<a href="https://rapolusakura.github.io/portfolios/projects.html" target="_blank"> Projects</a>
-<a href="https://rapolusakura.github.io/portfolios/additionalinfo.html" target="_blank">About Me</a> 
-<a href="https://rapolusakura.github.io/portfolios/contact.html" target="_blank">Contact</a> 
+<h2 style="text-align:center">Contact Me</h2>
+
+<div class="card">
+  <img src="http://i.imgur.com/8Uc0Si8.jpg" alt="Sakura" style="width:100%">
+  <div class="container">
+    <h1>Sakura Rapolu</h1>
+    <p class="title">Student of Girls Who Code</p>
+    <p>Dougherty Valley High School</p>
+    <div style="margin: 24px 0;">
+      <a href="https://www.instagram.com/sakurawrr/?hl=en"target = "_blank"><i class="fa fa-instagram"></i></a> 
+      <a href="http://i.imgur.com/77Krrde.png"target = "_blank"><i class="fa fa-snapchat"></i></a>  
+      <a href="https://www.facebook.com/sakura.rapolu"target = "_blank"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.linkedin.com/in/sakura-rapolu-600138140/" target = "_blank"><i class="fa fa-linkedin"></i></a>  
+      
+   </div>
+   <p><button>Contact</button></p>
+  </div>
 </div>
 
-<div id="main">
-<h1>Sakura Rapolu</h1>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-<title>Contact Me</title>
-<body style="background-color:powderblue;">
-
-<hr> 
-<h1> Contact Info </h1> 
-<pre> 
-<big>Name: Sakura Rapolu
-Email: rapolusakura@gmail.com
-Facebook: <a href="https://www.facebook.com/sakura.rapolu" target = "_blank">Sakura Rapolu</a>
-Follow me on instagram: @sakurawrrr
-<p></p> 
-Snapchat: <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://i.imgur.com/77Krrde.png" alt="Snapchat" width="32" height="32"></big>
-  <pre> 
-<script>
-function bigImg(x) {
-    x.style.height = "90px";
-    x.style.width = "90px";
-}
-
-function normalImg(x) {
-    x.style.height = "32px";
-    x.style.width = "32px";
-}
-</script>
-  
-</body> 
-
-</div>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-
-    
 </body>
-</html> 
-
+</html>
